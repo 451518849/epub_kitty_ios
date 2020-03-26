@@ -1,6 +1,0 @@
-module Pods_EpubKittyExample {
-  umbrella header "Pods-EpubKittyExample-umbrella.h"
-
-  export *
-  module * { export * }
-}

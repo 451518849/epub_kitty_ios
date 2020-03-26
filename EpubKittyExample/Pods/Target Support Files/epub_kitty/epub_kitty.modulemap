@@ -1,6 +1,0 @@
-module epub_kitty {
-  umbrella header "epub_kitty-umbrella.h"
-
-  export *
-  module * { export * }
-}
