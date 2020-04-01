@@ -9,9 +9,9 @@ Pod::Spec.new do |s|
 A new flutter plugin project.
                        DESC
   s.homepage         = 'https://github.com/451518849/epub_kitty_ios.git'
-  s.license          = { :file => './LICENSE' }
+  s.license          = "MIT"
   s.author           = { 'xiaofwang' => '451518849@qq.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :git => 'https://github.com/451518849/epub_kitty_ios.git', :tag=>'#{spec.version}' }
   
   s.swift_version = '4.2'
   s.requires_arc  = true
