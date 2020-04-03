@@ -2,8 +2,8 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'epub_kitty'
-  s.version          = '0.0.1'
+  s.name             = 'epub_kitty_ios'
+  s.version          = '0.1.0'
   s.summary          = 'A epub reader flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.
@@ -11,7 +11,7 @@ A new flutter plugin project.
   s.homepage         = 'https://github.com/451518849/epub_kitty_ios.git'
   s.license          = "MIT"
   s.author           = { 'xiaofwang' => '451518849@qq.com' }
-  s.source           = { :path => '.' }
+  s.source           = { :git => 'https://github.com/451518849/epub_kitty_ios.git', :tag=>'#{spec.version}' }
   
   s.swift_version = '4.2'
   s.requires_arc  = true
