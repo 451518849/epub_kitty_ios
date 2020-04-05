@@ -98,6 +98,17 @@ open class FolioReaderCenter: UIViewController, UICollectionViewDelegate, UIColl
 
     // MARK: - Init
 
+    open override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+        if #available(iOS 12.0, *) {
+            if self.traitCollection.userInterfaceStyle == .dark {
+              folioReader.nightMode = true
+            }else{
+                folioReader.nightMode = false
+            }
+        }
+    }
+
     init(withContainer readerContainer: FolioReaderContainer) {
         self.readerContainer = readerContainer
         super.init(nibName: nil, bundle: Bundle.frameworkBundle())
